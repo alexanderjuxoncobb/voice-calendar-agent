@@ -1,0 +1,21 @@
+{
+  "name": "voice-calendar-agent",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Voice-enabled Google Calendar assistant",
+  "scripts": {
+    "test:frontend": "node test-frontend.js",
+    "dev": "docker-compose up",
+    "build": "docker-compose build",
+    "down": "docker-compose down"
+  },
+  "devDependencies": {
+    "puppeteer": "^23.11.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderjuxoncobb/voice-calendar-agent.git"
+  },
+  "author": "Alexander Cobb",
+  "license": "MIT"
+}
