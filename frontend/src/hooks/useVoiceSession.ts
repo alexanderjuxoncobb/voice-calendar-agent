@@ -15,8 +15,12 @@ export function useVoiceSession() {
     if (!vapi) return
 
     try {
-      // TODO: Get assistant ID from backend
-      const assistantId = 'your_assistant_id'
+      const assistantId = import.meta.env.VITE_VAPI_ASSISTANT_ID
+      
+      if (!assistantId) {
+        console.error('VAPI Assistant ID not found')
+        return
+      }
       
       await vapi.start(assistantId)
       setIsRecording(true)

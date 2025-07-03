@@ -20,7 +20,13 @@
       "Bash(ls:*)",
       "Bash(node:*)",
       "Bash(find:*)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "WebFetch(domain:docs.vapi.ai)",
+      "Bash(brew install:*)",
+      "Bash(ngrok http:*)",
+      "Bash(ngrok config:*)",
+      "Bash(docker-compose exec:*)",
+      "Bash(docker-compose:*)"
     ],
     "deny": []
   }
