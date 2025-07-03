@@ -217,9 +217,9 @@ voice-calendar-agent/
 
 ### Phase 1: Project Setup & Infrastructure (COMPLETED)
 1. ✅ **GitHub Repository**: Created at https://github.com/alexanderjuxoncobb/voice-calendar-agent
-2. ✅ **VAPI Account**: Created with API keys configured
-   - Public Key: ef9bdcbe-fad6-4fbe-b912-d43fb0bed0e1
-   - Private Key: 38598c97-dfb9-497b-a63b-c4e50c23d48f
+2. ✅ **VAPI Account**: Created with API keys stored in .env
+   - Keys configured in environment variables (VAPI_PUBLIC_KEY, VAPI_PRIVATE_KEY, VAPI_ASSISTANT_ID)
+   - All sensitive credentials properly secured in environment variables
    - Free tier: 10 minutes/month, $0.08/minute after
 3. ✅ **Docker Environment**: All services running
    - Backend (FastAPI): http://localhost:8000
@@ -249,7 +249,7 @@ voice-calendar-agent/
 ### What's Working End-to-End:
 - **Full Docker Stack**: All services healthy and communicating
 - **Frontend UI**: React app with working voice interface
-- **VAPI Voice Assistant**: Complete integration with Assistant ID `73ecd617-2590-4298-bd2d-7d334cc2c304`
+- **VAPI Voice Assistant**: Complete integration with assistant configured via environment variables
 - **Google Calendar Integration**: Full OAuth2 flow and real calendar access
 - **Voice → Calendar Flow**: Natural speech queries return actual calendar events
 - **Backend API**: FastAPI with comprehensive webhook handling
