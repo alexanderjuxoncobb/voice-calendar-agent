@@ -1,7 +1,7 @@
 """Calendar management endpoints."""
 
 from fastapi import APIRouter, Depends, HTTPException
-from typing import Dict, List
+from typing import Dict, List, Any
 from datetime import datetime
 
 router = APIRouter()

@@ -1,7 +1,7 @@
 """Authentication endpoints for Google OAuth."""
 
 from fastapi import APIRouter, HTTPException
-from typing import Dict
+from typing import Dict, Any
 
 router = APIRouter()
 
@@ -17,7 +17,7 @@ async def google_login() -> Dict[str, str]:
 
 
 @router.get("/google/callback")
-async def google_callback(code: str) -> Dict[str, any]:
+async def google_callback(code: str) -> Dict[str, Any]:
     """Handle Google OAuth callback."""
     # TODO: Exchange code for tokens
     # TODO: Get user info from Google

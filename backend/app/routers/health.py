@@ -1,7 +1,7 @@
 """Health check endpoints for monitoring."""
 
 from fastapi import APIRouter, Depends
-from typing import Dict
+from typing import Dict, Any
 
 from app.config import settings
 
@@ -18,7 +18,7 @@ async def health_check() -> Dict[str, str]:
 
 
 @router.get("/health/detailed")
-async def detailed_health_check() -> Dict[str, any]:
+async def detailed_health_check() -> Dict[str, Any]:
     """Detailed health check with service status."""
     # TODO: Check database connection
     # TODO: Check Redis connection
